@@ -13,5 +13,7 @@ def main():
     results = train_and_collect_results(env, total_timesteps=10000)
     plot_results(results)
 
+# commento di prova
+
 if __name__ == '__main__':
     main()
