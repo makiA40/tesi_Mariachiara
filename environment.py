@@ -106,7 +106,7 @@ class MagazzinoEnv(gym.Env):
             if (zona == 'A' and level in [0, 1, 2]) or \
                     (zona == 'B' and level == 3 and channel <= 10) or \
                     (zona == 'C' and level == 3 and 11 <= channel <= 25):
-                reward += 20
+                reward +=20
             else:
                 reward -= 1
         elif periodo == 3:

@@ -333,7 +333,7 @@ def collect_results(env, model, total_timesteps):
         results['horizontal_distances'].append(env.total_horizontal_distance)
         print(f"Timesteps: {timesteps}, Vertical Distance: {env.total_vertical_distance}, Horizontal Distance: {env.total_horizontal_distance}")  # Debug line
     return results
-
+# vedi i risultati 
 env = MagazzinoEnv()
 model = A2C(
     "MlpPolicy", env, verbose=1, n_steps=8192, learning_rate=1e-3,
